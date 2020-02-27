@@ -38,7 +38,7 @@ void CheckingAccount::chargeFee()
 
 void CheckingAccount::display(ostream& os) const
 {
-	cout << "Account Type: Checking" << endl;
-	cout << "Balance: $" << getBalance() << endl;
-	cout << "Transaction Fee: " << transactionFee << endl;
+	os << "Account Type: Checking" << endl;
+	os << "Balance: $" << getBalance() << endl;
+	os << "Transaction Fee: " << transactionFee << endl;
 }
